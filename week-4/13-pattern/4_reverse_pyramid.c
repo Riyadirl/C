@@ -7,9 +7,10 @@ int main()
 {
     int n, s, k;
     scanf("%d", &n);
-    s = n - 1;
-    k = 1;
-    for (int i = 1; i <= n; i++)
+    s = 0;
+    k = n * 2 - 1;
+
+    for (int i = n; i >= 1; i--)
     {
         for (int j = 1; j <= s; j++)
         {
@@ -19,19 +20,10 @@ int main()
         {
             printf("*");
         }
-        // end line
-        s--;
-        k += 2;
+        s++;
+        k = k - 2;
         printf("\n");
     }
 
     return 0;
 }
-
-/*
- *
- ***
- *****
- *******
- *********
- */
