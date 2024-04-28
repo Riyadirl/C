@@ -2,14 +2,18 @@
 #include <string.h>
 #include <math.h>
 #include <stdlib.h>
-/*
-1 
-1 2 
-1 2 3 
-1 2 3 4 
-*/
+
 int main()
 {
+    /*
+    n = 5
+     *
+     * *
+     * * *
+     * * * *
+     * * * * *
+
+     */
     int n, k = 1;
     scanf("%d", &n);
 
@@ -17,12 +21,11 @@ int main()
     {
         for (int j = 1; j <= k; j++)
         {
-            printf("%d ", j);
+            printf("* ");
         }
-        k++;
+        //end line
         printf("\n");
+        k++;
     }
-
     return 0;
 }
-
